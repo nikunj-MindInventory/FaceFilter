@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8593BEC277C6F1A0045823C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8593BEB277C6F1A0045823C /* String+Extension.swift */; };
 		B8E7068E277987BB0027455B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7068D277987BB0027455B /* AppDelegate.swift */; };
 		B8E70690277987BB0027455B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E7068F277987BB0027455B /* SceneDelegate.swift */; };
-		B8E70692277987BB0027455B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E70691277987BB0027455B /* ViewController.swift */; };
 		B8E70695277987BB0027455B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E70693277987BB0027455B /* Main.storyboard */; };
 		B8E70697277987BC0027455B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E70696277987BC0027455B /* Assets.xcassets */; };
 		B8E7069A277987BC0027455B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E70698277987BC0027455B /* LaunchScreen.storyboard */; };
+		B8E706A52779883B0027455B /* FaceEffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E706A42779883B0027455B /* FaceEffectsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8593BEB277C6F1A0045823C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		B8E7068A277987BB0027455B /* FaceEffects-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FaceEffects-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E7068D277987BB0027455B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E7068F277987BB0027455B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B8E70691277987BB0027455B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8E70694277987BB0027455B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8E70696277987BC0027455B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8E70699277987BC0027455B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8E7069B277987BC0027455B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E706A42779883B0027455B /* FaceEffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceEffectsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B86799CD277AEF830058A3A1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B8593BEB277C6F1A0045823C /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B8E70681277987BB0027455B = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +66,40 @@
 		B8E7068C277987BB0027455B /* FaceEffects-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B8E7068D277987BB0027455B /* AppDelegate.swift */,
-				B8E7068F277987BB0027455B /* SceneDelegate.swift */,
-				B8E70691277987BB0027455B /* ViewController.swift */,
-				B8E70693277987BB0027455B /* Main.storyboard */,
+				B8E706A1277987E40027455B /* AppLifecycle */,
+				B8E706A3277988060027455B /* Storyboard */,
+				B8E706A2277987F20027455B /* Demo */,
+				B86799CD277AEF830058A3A1 /* Extension */,
 				B8E70696277987BC0027455B /* Assets.xcassets */,
-				B8E70698277987BC0027455B /* LaunchScreen.storyboard */,
 				B8E7069B277987BC0027455B /* Info.plist */,
 			);
 			path = "FaceEffects-Demo";
+			sourceTree = "<group>";
+		};
+		B8E706A1277987E40027455B /* AppLifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				B8E7068D277987BB0027455B /* AppDelegate.swift */,
+				B8E7068F277987BB0027455B /* SceneDelegate.swift */,
+			);
+			path = AppLifecycle;
+			sourceTree = "<group>";
+		};
+		B8E706A2277987F20027455B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B8E706A42779883B0027455B /* FaceEffectsViewController.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		B8E706A3277988060027455B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B8E70693277987BB0027455B /* Main.storyboard */,
+				B8E70698277987BC0027455B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E70692277987BB0027455B /* ViewController.swift in Sources */,
+				B8E706A52779883B0027455B /* FaceEffectsViewController.swift in Sources */,
 				B8E7068E277987BB0027455B /* AppDelegate.swift in Sources */,
+				B8593BEC277C6F1A0045823C /* String+Extension.swift in Sources */,
 				B8E70690277987BB0027455B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,15 +323,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7224G6JACN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FaceEffects-Demo/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires a feed from the selfie cam, so it can track your face.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +344,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mi.FaceEffects-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MI_WildCard_Dev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,15 +356,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7224G6JACN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FaceEffects-Demo/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires a feed from the selfie cam, so it can track your face.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +377,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mi.FaceEffects-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MI_WildCard_Dev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
